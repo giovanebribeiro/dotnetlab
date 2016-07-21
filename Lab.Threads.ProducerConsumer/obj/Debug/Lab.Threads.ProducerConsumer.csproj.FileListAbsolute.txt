@@ -1,0 +1,1 @@
+C:\workspace\Giovanebribeiro.Lab\Lab.Threads.ProducerConsumer\bin\Debug\Lab.Threads.ProducerConsumer.exe.config
