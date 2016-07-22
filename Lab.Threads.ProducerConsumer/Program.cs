@@ -112,6 +112,38 @@ namespace Lab.Threads.ProducerConsumer
     {
         static void Main(string[] args)
         {
+            int result = 0;
+            Cell cell = new Cell();
+            CellProd prod = new CellProd(cell, 20); // produce 20 items
+            CellCons cons = new CellCons(cell, 20); // consumes 20 items
+
+            Thread producer = new Thread(new ThreadStart(prod.ThreadRun));
+            Thread consumer = new Thread(new ThreadStart(cons.ThreadRun));
+
+            try
+            {
+                producer.Start();
+                consumer.Start();
+
+                producer.Join();
+                consumer.Join();
+
+                Thread.Sleep(10000); //sleep for 10 seconds, to allow us to see the results
+            }
+            catch (ThreadStateException e)
+            {
+                Console.WriteLine(e);
+                result = 1;
+            }
+            catch(ThreadInterruptedException e)
+            {
+                Console.WriteLine(e);
+                result = 1;
+            }
+
+
+
+            Environment.ExitCode = result;
         }
     }
 }
