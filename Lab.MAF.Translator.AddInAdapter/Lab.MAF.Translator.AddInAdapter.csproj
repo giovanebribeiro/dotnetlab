@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B43C5821-277E-47AD-8ABC-E308092FA9E8}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{05ECCE4C-84D9-4575-826E-21E0368E4668}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab.MEF.Calculator</RootNamespace>
-    <AssemblyName>Lab.MEF.Calculator</AssemblyName>
+    <RootNamespace>Lab.MAF.Translator.AddInAdapter</RootNamespace>
+    <AssemblyName>Lab.MAF.Translator.AddInAdapter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,7 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.AddIn.Contract" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,17 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICalculator.cs" />
-    <Compile Include="IOperation.cs" />
-    <Compile Include="IOperationData.cs" />
-    <Compile Include="MySimpleCalculator.cs" />
-    <Compile Include="operations\Add.cs" />
-    <Compile Include="operations\Subtract.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="TranslatorAddInViewToContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\Lab.MAF.Translator.AddInView\Lab.MAF.Translator.AddInView.csproj">
+      <Project>{f2018a21-f6e9-4e02-a200-4a0b4eacb991}</Project>
+      <Name>Lab.MAF.Translator.AddInView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lab.MAF.Translator.Contract\Lab.MAF.Translator.Contract.csproj">
+      <Project>{999ccff4-412f-4def-baf7-f1c0c622e34e}</Project>
+      <Name>Lab.MAF.Translator.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
