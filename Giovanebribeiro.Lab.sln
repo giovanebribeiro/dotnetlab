@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MAF.Translator.HostAdap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MAF.Translator.AddInAdapter", "Lab.MAF.Translator.AddInAdapter\Lab.MAF.Translator.AddInAdapter.csproj", "{05ECCE4C-84D9-4575-826E-21E0368E4668}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MEF.Calculator.Operations.Mult", "Lab.MEF.Calculator.Operations.Mult\Lab.MEF.Calculator.Operations.Mult.csproj", "{A1963FFF-0BE0-41CB-908F-90678B67B723}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{05ECCE4C-84D9-4575-826E-21E0368E4668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05ECCE4C-84D9-4575-826E-21E0368E4668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05ECCE4C-84D9-4575-826E-21E0368E4668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1963FFF-0BE0-41CB-908F-90678B67B723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1963FFF-0BE0-41CB-908F-90678B67B723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1963FFF-0BE0-41CB-908F-90678B67B723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1963FFF-0BE0-41CB-908F-90678B67B723}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{F2018A21-F6E9-4E02-A200-4A0B4EACB991} = {A377A46E-0071-4246-AC98-3144460BCF1B}
 		{7FB8DC56-23FC-4C15-A5BD-209D493798C0} = {A377A46E-0071-4246-AC98-3144460BCF1B}
 		{05ECCE4C-84D9-4575-826E-21E0368E4668} = {A377A46E-0071-4246-AC98-3144460BCF1B}
+		{A1963FFF-0BE0-41CB-908F-90678B67B723} = {55BB3546-111B-4941-8EFD-7072A3E6E1E8}
 	EndGlobalSection
 EndGlobal
