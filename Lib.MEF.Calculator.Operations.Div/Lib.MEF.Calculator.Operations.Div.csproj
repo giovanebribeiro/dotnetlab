@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B43C5821-277E-47AD-8ABC-E308092FA9E8}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{FDE402D1-CB0B-4EA1-B98A-AFF2878E7F8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab.MEF.Calculator</RootNamespace>
-    <AssemblyName>Lab.MEF.Calculator</AssemblyName>
+    <RootNamespace>Lib.MEF.Calculator.Operations.Div</RootNamespace>
+    <AssemblyName>Lib.MEF.Calculator.Operations.Div</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,14 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MySimpleCalculator.cs" />
-    <Compile Include="operations\Add.cs" />
-    <Compile Include="operations\Subtract.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Div.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lab.MEF.Calculator.API\Lab.MEF.Calculator.API.csproj">

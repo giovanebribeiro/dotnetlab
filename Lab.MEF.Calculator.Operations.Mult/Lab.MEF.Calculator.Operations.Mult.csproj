@@ -45,9 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lab.MEF.Calculator\Lab.MEF.Calculator.csproj">
-      <Project>{b43c5821-277e-47ad-8abc-e308092fa9e8}</Project>
-      <Name>Lab.MEF.Calculator</Name>
+    <ProjectReference Include="..\Lab.MEF.Calculator.API\Lab.MEF.Calculator.API.csproj">
+      <Project>{50ea01db-e1b5-4c69-a112-4f961793a634}</Project>
+      <Name>Lab.MEF.Calculator.API</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

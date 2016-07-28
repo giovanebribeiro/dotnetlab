@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MAF.Translator.AddInAda
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MEF.Calculator.Operations.Mult", "Lab.MEF.Calculator.Operations.Mult\Lab.MEF.Calculator.Operations.Mult.csproj", "{A1963FFF-0BE0-41CB-908F-90678B67B723}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MEF.Calculator.API", "Lab.MEF.Calculator.API\Lab.MEF.Calculator.API.csproj", "{50EA01DB-E1B5-4C69-A112-4F961793A634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib.MEF.Calculator.Operations.Div", "Lib.MEF.Calculator.Operations.Div\Lib.MEF.Calculator.Operations.Div.csproj", "{FDE402D1-CB0B-4EA1-B98A-AFF2878E7F8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,14 @@ Global
 		{A1963FFF-0BE0-41CB-908F-90678B67B723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1963FFF-0BE0-41CB-908F-90678B67B723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1963FFF-0BE0-41CB-908F-90678B67B723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50EA01DB-E1B5-4C69-A112-4F961793A634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50EA01DB-E1B5-4C69-A112-4F961793A634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50EA01DB-E1B5-4C69-A112-4F961793A634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50EA01DB-E1B5-4C69-A112-4F961793A634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE402D1-CB0B-4EA1-B98A-AFF2878E7F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE402D1-CB0B-4EA1-B98A-AFF2878E7F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE402D1-CB0B-4EA1-B98A-AFF2878E7F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE402D1-CB0B-4EA1-B98A-AFF2878E7F8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,5 +111,7 @@ Global
 		{7FB8DC56-23FC-4C15-A5BD-209D493798C0} = {A377A46E-0071-4246-AC98-3144460BCF1B}
 		{05ECCE4C-84D9-4575-826E-21E0368E4668} = {A377A46E-0071-4246-AC98-3144460BCF1B}
 		{A1963FFF-0BE0-41CB-908F-90678B67B723} = {55BB3546-111B-4941-8EFD-7072A3E6E1E8}
+		{50EA01DB-E1B5-4C69-A112-4F961793A634} = {55BB3546-111B-4941-8EFD-7072A3E6E1E8}
+		{FDE402D1-CB0B-4EA1-B98A-AFF2878E7F8A} = {55BB3546-111B-4941-8EFD-7072A3E6E1E8}
 	EndGlobalSection
 EndGlobal

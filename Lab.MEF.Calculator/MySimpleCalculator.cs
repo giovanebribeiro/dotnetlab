@@ -10,7 +10,7 @@ namespace Lab.MEF.Calculator
     [Export(typeof(ICalculator))]
     class MySimpleCalculator : ICalculator
     {
-        [ImportMany]
+        [ImportMany(AllowRecomposition = true)]
         private IEnumerable<Lazy<IOperation, IOperationData>> Operations;
 
         private int FindFirstNonDigit(String s)

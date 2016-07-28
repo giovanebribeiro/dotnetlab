@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab.MEF.Calculator
 {
-    interface ICalculator
+    public interface ICalculator
     {
         string Calculate(string input);
     }
