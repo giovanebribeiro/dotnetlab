@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 
 namespace Lab.MAF.Calculator.Host
 {
+    /// <summary>
+    /// Complete tutorial: https://msdn.microsoft.com/en-us/library/bb788290(v=vs.110).aspx
+    /// Theorical infos: https://blogs.msdn.microsoft.com/sidharth/2009/05/03/working-with-the-managed-addin-framework-system-addin/
+    /// </summary>
     class MathHost
     {
         static void Main(string[] args)
