@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0442F49-F7ED-40C3-8023-68837E00A77A}</ProjectGuid>
+    <ProjectGuid>{77A27CFA-8CCB-4B56-8BEE-D488F2844B3E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab.MAF.Calculator.Contracts</RootNamespace>
-    <AssemblyName>Lab.MAF.Calculator.Contracts</AssemblyName>
+    <RootNamespace>Lab.MAF.Calculator.AddInAdapter</RootNamespace>
+    <AssemblyName>Lab.MAF.Calculator.AddInAdapter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\Contracts\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -42,9 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="ICalculator.cs" />
+    <Compile Include="CalculatorViewToContractAddInSideAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab.MAF.Calculator.AddInView\Lab.MAF.Calculator.AddInView.csproj">
+      <Project>{4f902160-5317-4e03-be6d-f9dada45106a}</Project>
+      <Name>Lab.MAF.Calculator.AddInView</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lab.MAF.Calculator.Contract\Lab.MAF.Calculator.Contract.csproj">
+      <Project>{596934af-7ab0-46e9-bf01-735d80fdd6d0}</Project>
+      <Name>Lab.MAF.Calculator.Contract</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

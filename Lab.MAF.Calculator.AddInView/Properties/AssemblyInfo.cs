@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Lab.MAF.Translator.HostAdapter")]
+[assembly: AssemblyTitle("Lab.MAF.Calculator.AddInView")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Lab.MAF.Translator.HostAdapter")]
+[assembly: AssemblyProduct("Lab.MAF.Calculator.AddInView")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7fb8dc56-23fc-4c15-a5bd-209d493798c0")]
+[assembly: Guid("4f902160-5317-4e03-be6d-f9dada45106a")]
 
 // Version information for an assembly consists of the following four values:
 //

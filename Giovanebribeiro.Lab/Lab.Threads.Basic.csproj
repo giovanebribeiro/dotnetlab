@@ -7,8 +7,8 @@
     <ProjectGuid>{58C2FF29-AB83-4E3C-83E3-B647B5BE688C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Giovanebribeiro.Lab</RootNamespace>
-    <AssemblyName>Giovanebribeiro.Lab</AssemblyName>
+    <RootNamespace>Lab.Threads.Basic</RootNamespace>
+    <AssemblyName>Lab.Threads.Basic</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
