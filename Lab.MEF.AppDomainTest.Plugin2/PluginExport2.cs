@@ -13,7 +13,7 @@ namespace Lab.MEF.AppDomainTest.Plugin2
     {
         public void InHere()
         {
-            Console.WriteLine(">>>> Inside Plugin 2 <<<<");
+            Console.WriteLine(" >>>> Inside Plugin 2. AppDomain: {0} <<<< ", AppDomain.CurrentDomain.FriendlyName);
         }
     }
 }

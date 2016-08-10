@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab.MEF.AppDomainTest.Runner;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -27,6 +28,29 @@ namespace Lab.MEF.AppDomainTest.App
                 ShadowCopyFiles = "true",
                 ShadowCopyDirectories = pluginPath
             };
+
+            // Create a new app domain
+            Domain = AppDomain.CreateDomain("Host_AppDomain", AppDomain.CurrentDomain.Evidence, setup);
+            var runner = (LabMEFRunner)Domain.CreateInstanceAndUnwrap(typeof(LabMEFRunner).Assembly.FullName, typeof(LabMEFRunner).FullName);
+
+            Console.WriteLine("The main AppDomain is :{0}", AppDomain.CurrentDomain.FriendlyName);
+
+            runner.DoWorkInShadowCopiedDomain();
+            runner.DoSomething();
+
+            Console.WriteLine("\nHere you can remove a DLL from the Plugins folder.");
+            Console.WriteLine("Press any key when ready...");
+            Console.ReadKey();
+
+            // After remove a DLL, we can recompose the MEF parts and see that the 
+            //removed DLL is no longer accessed.
+            runner.Recompose();
+            runner.DoSomething();
+            Console.WriteLine("Press any key when ready.");
+            Console.ReadKey();
+
+            // clean up
+            AppDomain.Unload(Domain);
         }
     }
 }

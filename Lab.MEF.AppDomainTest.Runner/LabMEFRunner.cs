@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Lab.MEF.AppDomainTest.Runner
 {
-    public class Runner: MarshalByRefObject
+    public class LabMEFRunner: MarshalByRefObject
     {
         private CompositionContainer container;
         private DirectoryCatalog directoryCatalog;
@@ -25,7 +25,7 @@ namespace Lab.MEF.AppDomainTest.Runner
             regBuilder.ForTypesDerivedFrom<IExport>().Export();
 
             var catalog = new AggregateCatalog();
-            catalog.Catalogs.Add(new AssemblyCatalog(typeof(Runner).Assembly, regBuilder));
+            catalog.Catalogs.Add(new AssemblyCatalog(typeof(LabMEFRunner).Assembly, regBuilder));
             directoryCatalog = new DirectoryCatalog(pluginPath, regBuilder);
             catalog.Catalogs.Add(directoryCatalog);
 
