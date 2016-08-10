@@ -1,6 +1,5 @@
 C:\workspace\Giovanebribeiro.Lab\Lab.Threads.ProducerConsumer\bin\Debug\Lab.Threads.ProducerConsumer.exe.config
 C:\workspace\Giovanebribeiro.Lab\Lab.Threads.ProducerConsumer\bin\Debug\Lab.Threads.ProducerConsumer.exe
 C:\workspace\Giovanebribeiro.Lab\Lab.Threads.ProducerConsumer\bin\Debug\Lab.Threads.ProducerConsumer.pdb
-C:\workspace\Giovanebribeiro.Lab\Lab.Threads.ProducerConsumer\obj\Debug\Lab.Threads.ProducerConsumer.csprojResolveAssemblyReference.cache
 C:\workspace\Giovanebribeiro.Lab\Lab.Threads.ProducerConsumer\obj\Debug\Lab.Threads.ProducerConsumer.exe
 C:\workspace\Giovanebribeiro.Lab\Lab.Threads.ProducerConsumer\obj\Debug\Lab.Threads.ProducerConsumer.pdb

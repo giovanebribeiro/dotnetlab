@@ -4,24 +4,27 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0C1F965-4ED2-41C4-928E-886CC70C6BFB}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{663A78E3-F0DD-4533-8AE4-FDAA7EA4475B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab.MAF.Calculator.HostView</RootNamespace>
-    <AssemblyName>Lab.MAF.Calculator.HostView</AssemblyName>
+    <RootNamespace>Lab.MAF.Calculator.Host</RootNamespace>
+    <AssemblyName>Lab.MAF.Calculator.Host</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Lab.MAF.Calculator.Host\bin\Debug\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.AddIn" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,8 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICalculator.cs" />
+    <Compile Include="MathHost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab.MAF.Calculator.HostAdapter\Lab.MAF.Calculator.HostAdapter.csproj">
+      <Project>{21187d25-78a6-466a-aeff-3af64ce3f073}</Project>
+      <Name>Lab.MAF.Calculator.HostAdapter</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lab.MAF.Calculator.HostView\Lab.MAF.Calculator.HostView.csproj">
+      <Project>{D0C1F965-4ED2-41C4-928E-886CC70C6BFB}</Project>
+      <Name>Lab.MAF.Calculator.HostView</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,5 @@
-C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\bin\Debug\Giovanebribeiro.Lab.exe.config
-C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\bin\Debug\Giovanebribeiro.Lab.exe
-C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\bin\Debug\Giovanebribeiro.Lab.pdb
-C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\obj\Debug\Lab.Threads.Basic.csprojResolveAssemblyReference.cache
-C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\obj\Debug\Giovanebribeiro.Lab.exe
-C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\obj\Debug\Giovanebribeiro.Lab.pdb
+C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\bin\Debug\Lab.Threads.Basic.exe.config
+C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\bin\Debug\Lab.Threads.Basic.exe
+C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\bin\Debug\Lab.Threads.Basic.pdb
+C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\obj\Debug\Lab.Threads.Basic.exe
+C:\workspace\Giovanebribeiro.Lab\Giovanebribeiro.Lab\obj\Debug\Lab.Threads.Basic.pdb
