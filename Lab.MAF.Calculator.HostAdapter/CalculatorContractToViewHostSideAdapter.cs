@@ -21,22 +21,22 @@ namespace Lab.MAF.Calculator.HostAdapter
             this.contractHandle = new ContractHandle(contract);
         }
 
-        public double Add(double a, double b)
+        public override double Add(double a, double b)
         {
             return this.contract.Add(a, b);
         }
 
-        public double Div(double a, double b)
+        public override double Div(double a, double b)
         {
             return this.contract.Div(a, b);
         }
 
-        public double Mult(double a, double b)
+        public override double Mult(double a, double b)
         {
             return this.contract.Mult(a, b);
         }
 
-        public double Sub(double a, double b)
+        public override double Sub(double a, double b)
         {
             return this.contract.Sub(a, b);
         }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab.MAF.Calculator.HostView
 {
-    public interface ICalculator
+    public abstract class ICalculator
     {
-        double Add(double a, double b);
-        double Sub(double a, double b);
-        double Mult(double a, double b);
-        double Div(double a, double b);
+        public abstract double Add(double a, double b);
+        public abstract double Sub(double a, double b);
+        public abstract double Mult(double a, double b);
+        public abstract double Div(double a, double b);
     }
 }
